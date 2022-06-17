@@ -6,9 +6,11 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 16:22:02 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/27 18:47:04 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 19:54:34 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

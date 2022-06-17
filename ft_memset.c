@@ -6,9 +6,10 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 12:08:06 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/27 19:30:46 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 19:34:24 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -18,23 +19,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	s = b;
 	while (i < len)
-	{
-		s[i] = (unsigned char)c;
-		i++;
-	}
+		s[i++] = (unsigned char)c;
 	return (b);
 }
-
-/*
-int main () {
-   char str[50];
-
-   strcpy(str,"This is string.h library function");
-   puts(str);
-
-   ft_memset(str,'*',10);
-   puts(str);
-   
-   return(0);
-}
-*/

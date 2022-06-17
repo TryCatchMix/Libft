@@ -6,8 +6,13 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 10:11:36 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/26 10:11:38 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 19:38:11 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_putstr_fd(char *s, int fd)
+{
+	write(fd, s, ft_strlen(s));
+}

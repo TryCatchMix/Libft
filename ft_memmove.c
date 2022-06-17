@@ -6,26 +6,27 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:04:06 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/26 14:11:44 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 20:08:51 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memmove(void *str1, const void *str2, size_t n)
 {
-	unsigned char		*p_str1;
-	unsigned const char	*p_str2;
+	char	*p_str1;
+	char	*p_str2;
 
+	if (!str1 && !str2)
+		return (0);
 	if (str1 < str2)
-		return (ft_memcpy(str1, str2, n));
-	p_str1 = (unsigned char*)str1;
-	p_str2 = (unsigned const char*)str2;
-	if (!n || str1 == str2)
-		return (str1);
-	while (n--)
-		p_str1[n] = p_str2[n];
+		ft_memcpy(str1, str2, n);
+	else
+	{
+		p_str1 = (char *)str1;
+		p_str2 = (char *)str2;
+		while (n--)
+			p_str1[n] = p_str2[n];
+	}
 	return (str1);
 }

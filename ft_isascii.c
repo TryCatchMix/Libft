@@ -6,13 +6,11 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 16:19:49 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/27 18:46:06 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 19:07:39 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
-	if (c >= 0 || c <= 127)
-		return (1);
-	return (0);
+	return (c >= 0 && c <= 127);
 }

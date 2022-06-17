@@ -6,13 +6,11 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 11:58:56 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/27 18:46:30 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 19:08:23 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 32 && c < 127)
-		return (1);
-	return (0);
+	return (c >= 32 && c < 127);
 }

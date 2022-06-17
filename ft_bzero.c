@@ -6,9 +6,11 @@
 /*   By: amunoz-g <amunoz-g@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 10:06:38 by amunoz-g          #+#    #+#             */
-/*   Updated: 2022/04/27 19:23:17 by amunoz-g         ###   ########.fr       */
+/*   Updated: 2022/06/16 18:57:57 by amunoz-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *str, size_t n)
 {
@@ -21,17 +23,3 @@ void	ft_bzero(void *str, size_t n)
 		i++;
 	}
 }
-
-/*
-int main () {
-   char str[50];
-
-   strcpy(str,"This is string.h library function");
-   puts(str);
-
-   ft_bzero(str,2);
-   puts(str);
-
-   return(0);
-}
-*/
